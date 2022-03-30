@@ -1,5 +1,6 @@
 import './index.css';
-import { MyClass } from './example-unit';
+import { Watch } from './watch/watch';
 
-const a = new MyClass(2);
-console.log('number is', a.get());
+const timeZone = 2; 
+const myWatch = new Watch(document, "clock", "mode", "increase", "light", "reset", "format", timeZone); // create a new watch
+myWatch.runWatch(); // start the watch

@@ -3,11 +3,45 @@
 
 <head>
     <meta charset="utf-8">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title><%= htmlWebpackPlugin.options.title %>
+    </title>
     <!-- support for mobile touch devices -->
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <!--modif-->
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Title</h1>
+    <script src="./index.ts"></script>
+    <h1>Watch</h1>
+    <div class="multiple-watches">
+        <div class="watch">
+            <circle class="watch-form">
+                <div class="clock" id="clock">
+                    <span class="clock-hour" id="hour">00</span><span class="clock-sep">:</span><span class="clock-minute" id="minute">00</span>
+                    <span class="clock-second" id="second">13</span>
+                    <span class="clock-ampm" id="ampm" disable></span>
+                </div>
+            </circle>
+            <div>
+                <div class="mode">
+                    <button id="mode" type="button" class="button mode" value="0">mode</button>
+                </div>
+                <div class="increase">
+                    <button id="increase" type="button" class="button increase">increase</button>
+                </div>
+                <div class="light">
+                    <button id="light" type="button" class="button light">light</button>
+                </div>
+                <div class="reset">
+                    <button id="reset" type="button" class="button reset">reset</button>
+                </div>
+                <div class="format">
+                    <button id="format" type="button" class="button format">AM/PM</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    
 </body>
 </html>
